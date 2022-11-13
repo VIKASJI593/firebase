@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor() {
     super();
     console.log('constructor');
-
+this.state = {count:0}
   }
 componentDidMount(){
   console.log('componentDidMount');
