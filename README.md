@@ -76,7 +76,9 @@ git push -f -u origin main
 
 
 //RENAME git remote rename origin tutorial
+
 git config --global user.name "VIKAS KUMAR"
+
 git config --global user.email "kumar.vikas593@gmail.com"
 
 
