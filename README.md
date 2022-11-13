@@ -30,7 +30,7 @@ git commit -m "componentDidUpdate"
 
 git push -u origin componentDidUpdate
 
-git push -f -u origin main
+git push -f -u origin componentDidUpdate
 
 
 
