@@ -14,9 +14,9 @@
 
 git branch
 
-git branch componentDidMount
+git branch componentDidUpdate
 
-git checkout componentDidMount 
+git checkout componentDidUpdate 
 
 git branch
 
@@ -26,9 +26,9 @@ git add .
 
 git status
 
-git commit -m "msg"
+git commit -m "componentDidUpdate"
 
-git push -u origin componentDidMount
+git push -u origin componentDidUpdate
 
 git push -f -u origin main
 
