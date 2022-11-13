@@ -14,9 +14,9 @@
 
 git branch
 
-git branch name
+git branch componentDidMount
 
-git branch name checkout
+git checkout componentDidMount 
 
 git branch
 
@@ -28,7 +28,7 @@ git status
 
 git commit -m "msg"
 
-git push -u origin branchname
+git push -u origin componentDidMount
 
 git push -f -u origin main
 
@@ -75,7 +75,8 @@ git push -f -u origin main
 
 
 
-//RENAME git remote rename origin tutorial
+//RENAME 
+git remote rename origin tutorial
 
 git config --global user.name "VIKAS KUMAR"
 
@@ -104,7 +105,7 @@ git add .
 
 git commit -m "Component-Lifecycle-Mounting"
 
-git push -u origin firebase
+git push -u origin Component-Lifecycle-Mounting
 
 git push -f -u origin Component-Lifecycle-Mounting
 
