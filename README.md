@@ -79,9 +79,6 @@ git push -f -u origin main
 git config --global user.name "VIKAS KUMAR"
 git config --global user.email "kumar.vikas593@gmail.com"
 
-git remote
-
- git remote -v
 
 git remote remove firebase
 
@@ -91,21 +88,19 @@ git remote
 
 git remote add firebase https://github.com/VIKASJI593/firebase.git
 
-git remote add firebase https://github.com/VIKASJI593/testing.git
 
 git remote set-url origin https://github.com/VIKASJI593/firebase.git
 
-git remote set-url origin https://github.com/VIKASJI593/testing.git
 
 git remote rename firebase origin
+
+git branch Component-Lifecycle-Mounting
+
+git checkout Component-Lifecycle-Mounting
 
 git add .
 
 git commit -m "Component-Lifecycle-Mounting"
-
-git branch Component-Lifecycle-Mounting
-git checkout Component-Lifecycle-Mounting
-
 
 git push -u origin firebase
 
