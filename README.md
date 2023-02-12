@@ -5,18 +5,19 @@ git checkout total-price
 
 git add .
 
-git commit -m "2-Adding total price"         
+git commit -m "Reading-data-from-Firebase"         
 
 git status
 
+git branch
+
+git remote -v
+
 git push -u origin total-price
 
+git push -u origin 2-Reading-data-from-Firebase
 
 
-
-git push -f -u origin total-cart
-
-Adding-products-count-to-Navbar
 
 
 
