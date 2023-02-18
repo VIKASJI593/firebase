@@ -25,7 +25,9 @@ class App extends React.Component {
         });
         this.setState({ products: products });
       });
+     
   }
+ 
   handleIncreaseQuantity = (product) => {
     const { products } = this.state;
     const index = products.indexOf(product);
@@ -62,7 +64,7 @@ console.log(products,index,docRef)
       });
   };
   handleDeleteProduct = (id) => {
-    const { products } = this.state;
+    //const { products } = this.state;
 
     const docRef = firestore.collection("products").doc(id);
 
