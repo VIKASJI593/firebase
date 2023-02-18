@@ -9,13 +9,22 @@ class App extends React.Component {
     super();
     this.state = {
       products: [],
-
     };
     //this.db = firebase.firestore();
   }
   componentDidMount() {
     firestore
       .collection("products")
+
+      //---------------------Querying the data----------------------
+
+      //.where('price', '==',900)
+      // .where('price', '>=',100)
+      //.where('title', '==','watch')
+      //  .orderBy('price')
+      // .orderBy('price','desc')
+      .orderBy("price", "asc")
+
       .get()
       .then((snapshot) => {
         const products = snapshot.docs.map((doc) => {
@@ -25,15 +34,14 @@ class App extends React.Component {
         });
         this.setState({ products: products });
       });
-     
   }
- 
+
   handleIncreaseQuantity = (product) => {
     const { products } = this.state;
     const index = products.indexOf(product);
 
     const docRef = firestore.collection("products").doc(products[index].id);
-console.log(products,index,docRef)
+    console.log(products, index, docRef);
     docRef
       .update({
         qty: products[index].qty + 1,
@@ -105,7 +113,7 @@ console.log(products,index,docRef)
   };
 
   addProduct = () => {
- firestore
+    firestore
       .collection("products")
       .add({
         img: "https://www.tradeinn.com/f/13819/138199658/teka-wmt-40720-wh-front-loading-washing-machine.jpg",
