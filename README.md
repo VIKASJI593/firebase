@@ -10,7 +10,7 @@ git commit -m "Deleting-products-in-Firebase"
 
 git status
 
-git branch -m Deleting-products-in-Firebase
+
 
 git branch
 

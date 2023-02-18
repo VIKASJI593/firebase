@@ -108,7 +108,7 @@ console.log(products,index,docRef)
  firestore
       .collection("products")
       .add({
-        img: "",
+        img: "https://www.tradeinn.com/f/13819/138199658/teka-wmt-40720-wh-front-loading-washing-machine.jpg",
         price: 900,
         qty: 3,
         title: "washing machine",
